@@ -9,7 +9,14 @@ import './App.css'
 function App(Props) {
   return React.createElement("div", {
               className: "App"
-            }, React.createElement("div", {
+            }, React.createElement("header", {
+                  className: "App-header"
+                }, React.createElement("a", {
+                      className: "App-link",
+                      href: "https://github.com/idkjs/reasonml-dropdown-menu-tutorial",
+                      rel: "noopener noreferrer",
+                      target: "_blank"
+                    }, "ReasonML Dropdown Menu Tutorial(Click to see the source code)")), React.createElement("div", {
                   style: {
                     display: "flex",
                     justifyContent: "center"
