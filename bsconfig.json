@@ -1,5 +1,5 @@
 {
-  "name": "tailwindcss-cra-reasonml-template",
+  "name": "reasonml-dropdown-menu-tutorial",
   "reason": { "react-jsx": 3 },
   "bsc-flags": ["-bs-super-errors"],
   "sources": [

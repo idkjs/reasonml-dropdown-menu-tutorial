@@ -1,12 +1,12 @@
 {
-  "name": "tailwindcss-cra-reasonml-template",
+  "name": "reasonml-dropdown-menu-tutorial",
   "version": "0.1.0",
   "private": true,
+  "keywords": ["ReasonML","OCaml","Tutorial","DropDownMenu","ReasonReact"],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "tailwindcss": "^1.0.4",
     "reason-react": "0.7.0"
   },
   "scripts": {
@@ -15,7 +15,7 @@
     "test": "craco test",
     "re:build": "bsb -make-world -clean-world",
     "re:watch": "bsb -make-world -clean-world -w",
-    "rebuild-styles": "npx tailwind build ./src/styles.css -o ./src/index.css",
+    "clean": "bsb -clean-world",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,6 +36,6 @@
   },
   "devDependencies": {
     "bs-platform": "5.0.6",
-    "@craco/craco": "^5.2.3"
+    "@craco/craco": "^5.2.4"
   }
 }

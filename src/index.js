@@ -3,7 +3,7 @@
 import * as React from "react";
 import * as ReactDOMRe from "reason-react/src/ReactDOMRe.js";
 import * as ServiceWorker from "./serviceWorker";
-import * as App$HasuraReasonDemoApp from "./App.js";
+import * as App$ReasonmlDropdownMenuTutorial from "./App.js";
 
 import './index.css'
 ;
@@ -18,7 +18,7 @@ function unregister_service_worker(prim) {
   return /* () */0;
 }
 
-ReactDOMRe.renderToElementWithId(React.createElement(App$HasuraReasonDemoApp.make, { }), "root");
+ReactDOMRe.renderToElementWithId(React.createElement(App$ReasonmlDropdownMenuTutorial.make, { }), "root");
 
 ServiceWorker.unregister();
 
