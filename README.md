@@ -2,6 +2,8 @@
 
 Today, In this tutorial we are are going to discuss how to create simple drop down menu in Reason-React and we have tried our best to make this tutorial as simple as possible. Here we are going to design CSS Dropdown menu with the help of ReasonML and also with the help of onClick Event, we are showing and hiding the drop down menu content.
 
+![menu-screenshot](./menu_screenshot.png)
+
 Lets see the below source code, which help you to build more understanding:
 
 ## Dropdown.re
