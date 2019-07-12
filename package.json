@@ -1,0 +1,41 @@
+{
+  "name": "tailwindcss-cra-reasonml-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "tailwindcss": "^1.0.4",
+    "reason-react": "0.7.0"
+  },
+  "scripts": {
+    "start": "SKIP_PREFLIGHT_CHECK=true craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "re:build": "bsb -make-world -clean-world",
+    "re:watch": "bsb -make-world -clean-world -w",
+    "rebuild-styles": "npx tailwind build ./src/styles.css -o ./src/index.css",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "eslintIgnore":["./src/**/*.js"],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "bs-platform": "5.0.6",
+    "@craco/craco": "^5.2.3"
+  }
+}
