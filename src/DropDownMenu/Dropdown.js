@@ -21,7 +21,11 @@ function Dropdown(Props) {
               style: {
                 background: "red",
                 width: "200px"
-              }
+              },
+              tabIndex: 0,
+              onBlur: (function (_evt) {
+                  return Curry._1(dispatch, /* ShowList */0);
+                })
             }, React.createElement("div", {
                   className: "button",
                   onClick: (function (_evt) {

@@ -21,7 +21,9 @@ let make = () => {
 
   <div
     className="dropdown"
-    style={ReactDOMRe.Style.make(~background="red", ~width="200px", ())}>
+    style={ReactDOMRe.Style.make(~background="red", ~width="200px", ())}
+    onBlur={_evt => dispatch(ShowList)}
+    tabIndex=0>
     <div className="button" onClick={_evt => dispatch(ShowList)}>
       {"My Setting" |> React.string}
     </div>
