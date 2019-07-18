@@ -2,6 +2,9 @@
   position: relative;
   display: inline-block;
 }
+.dropdown:focus {
+  outline: 0px;
+}
 ul {
   list-style-type: none;
   margin: 0;
