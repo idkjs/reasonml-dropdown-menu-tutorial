@@ -2,26 +2,31 @@
   "name": "reasonml-dropdown-menu-tutorial",
   "version": "0.1.0",
   "private": true,
-  "keywords": ["ReasonML","OCaml","Tutorial","DropDownMenu","ReasonReact"],
+  "keywords": [
+    "ReasonML",
+    "OCaml",
+    "Tutorial",
+    "DropDownMenu",
+    "Rescript"
+  ],
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "3.0.1",
-    "reason-react": "0.7.0"
+    "reason-react": "0.9.1"
   },
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "re:build": "bsb -make-world -clean-world",
-    "re:watch": "bsb -make-world -clean-world -w",
+     "start": "SKIP_PREFLIGHT_CHECK=true FORCE_COLOR=true react-scripts start | cat -n",
+    "build": "bsb -clean-world -make-world; react-scripts build",
+    "test": "react-scripts test",
+    "watch": "bsb -make-world -w",
     "clean": "bsb -clean-world",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "eslintIgnore":["./src/**/*.js"],
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,7 +40,6 @@
     ]
   },
   "devDependencies": {
-    "bs-platform": "5.0.6",
-    "@craco/craco": "^5.2.4"
+    "bs-platform": "9.0.2"
   }
 }
